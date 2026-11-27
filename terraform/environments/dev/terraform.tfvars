@@ -1,0 +1,5 @@
+project_id  = "rock-partition-515821-k4"
+bucket_name = "static-rock-partition-515821-k4"
+db_name     = "appdb"
+db_user     = "appuser"
+image       = "europe-west1-docker.pkg.dev/rock-partition-515821-k4/php-app/php-app:latest"
