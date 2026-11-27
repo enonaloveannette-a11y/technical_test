@@ -1,0 +1,13 @@
+{
+    "name": "candidate/technical-test",
+    "authors": [
+        {
+            "name": "enonaloveannette-a11y",
+            "email": "enonaloveannette@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^12.5"
+    }
+}

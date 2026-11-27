@@ -1,4 +1,4 @@
-<?php
+<?php require __DIR__ . '/src/helpers.php';
 $env = getenv('APP_ENV') ?: 'local';
 
 echo '<link rel="stylesheet" href="/static/style.css">';
@@ -13,7 +13,7 @@ echo "<h1>Devops Technical Test - Application PHP</h1>";
 echo "<p>PHP version: " . PHP_VERSION . "</p>";
 echo "<p>Environnement : " . htmlspecialchars($env) . "</p>";
 
-if (in_array(false, [$host, $db, $user, $pass], true)) {
+if (!db_config_is_complete([$host, $db, $user, $pass])) {
     echo "<p>Configuration de la bd incomplète :variables d'environnement manquantes.</p>";
 } else {
     if (str_starts_with($host, '/cloudsql/')) {

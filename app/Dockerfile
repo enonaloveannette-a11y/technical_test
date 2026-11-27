@@ -7,6 +7,7 @@ RUN docker-php-ext-install pdo_mysql
 COPY index.php /var/www/html/
 COPY static/ /var/www/html/static/
 COPY nginx.conf /etc/nginx/http.d/default.conf
+COPY src/ /var/www/html/src/
 
 RUN mkdir -p /run/nginx
 COPY start.sh /start.sh
