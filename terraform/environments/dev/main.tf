@@ -1,6 +1,6 @@
 module "storage" {
   source      = "../../modules/storage"
-  bucket_name = "static-rock-partition-515821-k4"
+  bucket_name = "var.bucket_name"
   location    = var.region
   project_id  = var.project_id
 }
