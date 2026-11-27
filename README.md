@@ -83,7 +83,7 @@ The script `./scripts/get-service-url.sh dev` also retrieves it.
 
 ## 7. Deployment result
 
-A real deployment was done on 27/11/2026 on GCP: the Cloud Run service `php-app-dev` responds, and the page displays "Database connection: OK" for Cloud SQL. The infrastructure will be destroyed after submission `terraform destroy` to avoid costs.
+A real deployment was done on 27/11/2026 on GCP: the Cloud Run service `php-app-dev` responds, and the page displays "Database connection: OK" for Cloud SQL. The infrastructure stays deployed until Monday 30/11/2026, then it will be destroyed with `terraform destroy` to avoid costs.
 
 ## 8. Problems encountered
 
